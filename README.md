@@ -1,1 +1,1 @@
-# jsWorkshop
+# A Dip Into JavaScript
