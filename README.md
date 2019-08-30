@@ -566,75 +566,104 @@ Output: 3
 
 ### 8 Array Iterations Methods
 
-//1.	forEach
-
-// forEach
+**forEach**
+* In Javascript forEach loop is written as below.
+```
 var array = [1, 2, 3];
 array.forEach(function (item,index) {
   console.log(item,index);
 });
 
+Output: 1 0
+2 1
+3 2
+```
 
-//2.	map -  It takes an item from the array and does something and puts it back in the same place in the array
+**map**
+* It takes an item from the array and does something and puts it back in the same place in the array.
+```
 const three = [1,2,3];
 const doubled = three.map(function(item){
 	return item * 2;
 });
 console.log(doubled);
 
-//3.	filter - It takes an item from the array and checks for an condition and puts the element back in the same 
-// place in the array if the condition is true and if it is false it not do anything.
+Output: [2, 4, 6]
+```
+
+**filter**
+* It takes an item from the array and checks for an condition and puts the element back in the same place in the array if the condition is true and if it is false it not do anything.
+```
 const ints = [1,2,3,4,5,6];
 const evens = ints.filter(function(item){
 	return item % 2 === 0;
 });
 console.log(evens);
 
-//4.	reduce - we take an array and do something and send the result to the next iteration along with the next element
-//reduce(function, initial value of the result)
+Output: [2, 4, 6]
+```
+**reduce** 
+* We take an array and do something and send the result to the next iteration along with the next element.
+* Syntax: `reduce(function, initial value of the result)`
+```
 const reducesum = [1,2,3].reduce(function(result,item){
 	return result + item;
 },0);
 console.log(reducesum);
 
-//5.	some - Checks if any item in the array meets the condition then returns true if not false 
+Output: 6
+```
+**some**
+* Checks if any item in the array meets the condition then returns true if not false.
+```
 const hasNegativeNumber = [1,2,3,-1].some(function(item){
 	return item < 0;
 });
 console.log(hasNegativeNumber);
 
-//6.	every - Checks if every item in the array meets the condition then returns true if not false 
+Output: true
+```
+**every**
+* Checks if every item in the array meets the condition then returns true if not false.
+```
 const allPositiveNumber = [1,2,3,-1].every(function(item){
 	return item > 0;
 });
 console.log(allPositiveNumber);
 
-//7.	find - Checks all the matching item in the array and retuns the item if the item is found.
+Output: false
+```
+**find** 
+* Checks all the matching item in the array and retuns the item if the item is found.
+```
 const objects = [{id:"a"},{id:"b"},{id:"d"}];
 const found = objects.find(function(item){
 	return item.id === "d";
 });
 console.log(found);
 
-//8.	findIndex - Checks all the matching item in the array and retuns the item's index if the item is found.
+Output: {id: "d"}
+```
+**findIndex** 
+* Checks all the matching item in the array and retuns the item's index if the item is found.
+```
 const objectsIndex = [{id:"a"},{id:"b"},{id:"d"}];
 const foundIndex = objectsIndex.findIndex(function(item){
 	return item.id === "d";
 });
 console.log(foundIndex);
 
+Output: 2
+```
 
+## Objects
 
-/*
-Objects
-
-In javascript an object is a standalone entity with properties and type. A property of an object can be explained as
+* In javascript an object is a standalone entity with properties and type. A property of an object can be explained as
 a variable that is attached to the object.
-Properties can be accessed by dot notation and it can also be accessed by square brackets.
-Usually the properties that start with underscore, number and containing spaces within it, should be accessed by the square 
+* Properties can be accessed by dot notation and it can also be accessed by square brackets.
+* Usually the properties that start with underscore, number and containing spaces within it, should be accessed by the square 
 brackets.
-*/
-
+```
 var myCar = new Object();
 myCar.make = "Audi";
 myCar.model = "Q7";
@@ -643,25 +672,25 @@ myCar["color"] = "Red";
 myCar["Do I like my car"] = "yes"; 
 console.log(myCar);
 
-/*
-Object Creation Methods
+Output: {make: "Audi", model: "Q7", color: "Red", Do I like my car: "yes"}
+```
+### Object Creation Methods
+* There are three ways to create an Object and they are .
+	* Object Initializer.
+	* Using constructor function
+	* Using Object.create() method.
 
-There are three ways to create an Object and they are .
-- Object Initializer.
-- Using constructor function
-- Using Object.create() method.
-*/
-
-
-//Object Initializer: 
-
+**Object Initializer**
+* Creating object using object initializer method.
+```
 var myFerrari = {color: "Red",wheels:4,engine:{cylinders:4,horsepower:2000}};
 console.log(myFerrari);
 
-//Using Constructor function
-// First create the type of the oject with the constructor function
-//  and then Create the instance using the new keyword 
-
+Output: {color: "Red",wheels:4,engine:{cylinders:4,horsepower:2000}}
+```
+**Using Constructor function**
+* First create the type of the oject with the constructor function and then Create the instance using the new keyword.
+```
 function Car(make,model,year){
 this.make = make;
 this.model = model;
@@ -671,9 +700,11 @@ this.year =  year;
 var myNewCar = new Car("Ferrari","sport","2000");
 console.log(myNewCar);
 
-//Using Object.create() method
-//This method allow us to choose a prototype for the object without having to define a constructor function
-
+Output: Car {make: "Ferrari", model: "sport", year: "2000"}
+```
+**Using Object.create() method**
+* This method allow us to choose a prototype for the object without having to define a constructor function
+```
 var carPrototype = {type:"SUV",displayType: function(){
 	console.log(this.type);
 }};
@@ -681,9 +712,14 @@ var carPrototype = {type:"SUV",displayType: function(){
 var mySUV =  Object.create(carPrototype);
 console.log(mySUV);
 
-
-
+Output: {}
+```
+```
 var mySport =  Object.create(carPrototype);
 mySport.type = "Sport";
 mySport.displayType();
 console.log(mySport);
+
+Output: Sport
+{type: "Sport"}
+```
