@@ -723,3 +723,65 @@ console.log(mySport);
 Output: Sport
 {type: "Sport"}
 ```
+### Using objects for lookup's
+* Objects can be thought of as a key value pair storage like a dictionary.
+* We can use indexes to access the objects.
+```
+var myAlpha = {
+	1:"Z",
+	2:"Y",
+	3:"X"
+	//...
+}
+
+console.log(myAlpha[2]);
+
+Output: Y
+```
+### Removing Object Properties.
+* *delete* keyword is used to delete properties in an object.
+```
+let dishes = {
+	plates:2,
+	cups: 5,
+	forks: 5,
+	bowls: 3
+}
+
+delete dishes.cups;
+console.log(dishes);
+
+Output: {plates: 2, forks: 5, bowls: 3}
+```
+### Testing objects for properties.
+* *hasOwnProperty()* This method is used to determine whether the object has the specified property.
+```
+let dishes = {
+	plates:2,
+	cups: 5,
+	forks: 5
+}
+console.log(dishes.hasOwnProperty("cups"));
+console.log(dishes.hasOwnProperty("bowls"));
+
+Output: true
+false
+```
+### Generating array with all object keys.
+* We can generate an array with the keys of an object with *Object.keys()* method.
+* This method retuns an array with the properties of an objects as string in the array.
+```
+let dishes = {
+	plates:2,
+	cups: 5,
+	bowls: {
+		large:1,
+		medium:2,
+		small:3
+	}
+}
+
+console.log(Object.keys(dishes));
+
+OutputL: ["plates", "cups", "bowls"]
+```
