@@ -689,7 +689,7 @@ console.log(myFerrari);
 Output: {color: "Red",wheels:4,engine:{cylinders:4,horsepower:2000}}
 ```
 **Using Constructor function**
-* First create the type of the oject with the constructor function and then Create the instance using the new keyword.
+* First create the type of the object with the constructor function and then Create the instance using the new keyword.
 ```
 function Car(make,model,year){
 this.make = make;
