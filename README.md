@@ -785,3 +785,18 @@ console.log(Object.keys(dishes));
 
 OutputL: ["plates", "cups", "bowls"]
 ```
+## JSON - JavaScript Object Notation
+* JSON is a syntax for storing and exchanging data.
+* JSON stores data in key values pairs.
+* JSON accepts *Objects, Arrays, null, numbers and strings* as values and does not accept *undefined, date and functions* as values.
+```
+let dishes = {
+	plates:2,
+	cups: null,
+	bowls: {
+		large:1,
+		medium:"two",
+		small:3
+	}
+}
+```
