@@ -791,12 +791,31 @@ OutputL: ["plates", "cups", "bowls"]
 * JSON accepts *Objects, Arrays, null, numbers and strings* as values and does not accept *undefined, date and functions* as values.
 ```
 let dishes = {
-	plates:2,
-	cups: null,
-	bowls: {
-		large:1,
-		medium:"two",
-		small:3
+	"plates":2,
+	"cups": null,
+	"bowls": {
+		"large":1,
+		"medium":"two",
+		"small":3
 	}
 }
+```
+### JSON methods
+**Stringify method**
+* This method is used to convert the specified JSON into string.
+```
+var stringdishes = JSON.stringify(dishes);
+console.log(stringdishes);
+
+Output: {"plates":2,"cups":null,"bowls":{"large":1,"medium":"two","small":3}}
+```
+**Parse method**
+* This method is used to convert a string JSON into a javascript object.
+```
+let dishes = '{"plates":2,"cups": 2}';
+
+var objdishes = JSON.parse(dishes);
+console.log(objdishes);
+
+Output: {plates: 2, cups: 2}
 ```
