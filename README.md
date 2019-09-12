@@ -49,7 +49,7 @@ console.log(stringOne.substring(2,6));
 Output: vasc
 ```
 
-* **substr()** : Returns a part of the string. Syntax - str(startIndex, number of characters).
+* **substr()** : Returns a part of the string. Syntax - substr(startIndex, number of characters).
 ```
 console.log(stringOne.substr(2,6));
 Output: vascri
