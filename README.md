@@ -1,4 +1,4 @@
-# A Dip of JavaScript
+# A quick deep dive into the basics of JavaScript
 
 ## Strings in Javascript
 ### 20 String functions:
