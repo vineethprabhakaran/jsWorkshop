@@ -241,7 +241,7 @@ Output: My Name is Superman
 ```
 
 ## Arrays 
-Arrays can have values of same and differnt datatypes.
+Arrays can have values of same and different datatypes.
 
 ### One-dimensional arrays.
 Arrays with values of same datatype.
