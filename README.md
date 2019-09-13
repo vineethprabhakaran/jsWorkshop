@@ -819,3 +819,46 @@ console.log(objdishes);
 
 Output: {plates: 2, cups: 2}
 ```
+### Hoisting
+* Variable declaration and function declaration are processed before any code is executed. So declaring a variable and function anywhere is equivalent to  declaring at the top. This means that the variable and function appear to be used before they were declared.
+This behaviour is called hoisting.
+* Variable definition doesn't follow hoisting 
+* In the below example the variable *definedLater* behaves as it was declared at the top and the defintion happens when the defined line is executed.
+```
+console.log(definedLater);
+var definedLater;
+definedLater = "I am defined";
+console.log(definedLater);
+
+Output: undefined
+I am defined
+```
+* The below example also works the same way as above.
+```
+console.log(definedLater);
+var definedLater= "I am defined";
+console.log(definedLater);
+
+Output: undefined
+I am defined
+```
+* The below example shows that the functions was declared at the top before the function call.
+```
+display();
+function display(){
+	console.log("Function defined");
+}
+
+Output: Function defined
+```
+
+* In the below example we cannot call the function before it is defined to a variable as it will throw an error.
+```
+//funcVar(); uncommenting this line will through an error.
+var funcVar = function(){
+	console.log("Function defined");
+}
+funcVar();
+
+Output: Function defined
+```
