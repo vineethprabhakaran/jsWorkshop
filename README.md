@@ -862,3 +862,73 @@ funcVar();
 
 Output: Function defined
 ```
+## Closures
+* A closure is a combination of the function and the environment within which it was decalred.
+* In Javascript the function consists of variables whose scope exists within the function when closures are not available.
+* One main use of closures is that, we can create private methods and access them by using other methods. So that the variables and the methods remain can remain private as shown below.
+```
+var counter = (function(){
+var privateCounter = 0;
+function changeBy(val){
+privateCounter += val;
+}
+
+return{increment:function(){
+	changeBy(1);
+},
+decrement: function(){
+	changeBy(-1);
+},
+value:function(){
+	return privateCounter;
+}
+};
+})();
+
+console.log(counter.value());
+counter.increment();
+counter.increment();
+console.log(counter.value());
+counter.decrement();
+console.log(counter.value());
+
+Output: 0
+2
+1
+```
+## This keyword.
+* The this keyword in javascript is the object that owns the javascript code.
+* The value of this, when used inside a function is the object that owns the function.
+* The value of this, when used in an object is the object itself.
+* The value of this, when used outside the function is the global object of the javascript.
+* The below code indicates that the this keyword refers to the global object.
+```
+console.log(this.document === document);
+console.log(this === window);
+this.a = 12;
+console.log(window.a);
+
+Output: true
+true
+12
+```
+* In case when this is used inside the function and the value for this is not set by the call then this will refer to the global object as shown below.
+```
+function func(){
+	return this;
+}
+console.log(func() === window);
+
+Output: true
+```
+* When we use *use strict* inside the function then this refers to the object within the function and it returns undefined in the below 
+func() call.
+```
+function func1(){
+'use strict'
+	return this;
+}
+console.log(func1() === window);
+
+Output: false
+```
