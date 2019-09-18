@@ -932,7 +932,7 @@ console.log(func1() === window);
 
 Output: false
 ```
-***Call and apply methods***
+### Call and apply methods
 * When this is used inside the function it refers to an object when is set in the call method.
 * The apply method is also similar to the call method where the call method accepts the arguments as a list and the apply method accepts an array of arguments as the arguments.
 ```
@@ -947,7 +947,7 @@ console.log(add.apply(o,[3,4]));
 Output: 10
 10
 ```
-***Bind Method***
+### Bind Method
 * When we call bind method on a function  it will create a new function same as the original function and the scope.
 * The this keyword is present in the orginal function and the new function will be always bound to the first argument which is passed to the bind function.
 * So how many times you bind same function it will always return the same first argument as the output. 
@@ -969,7 +969,7 @@ Output: Hello
 Hello
 Hai
 ```
-***this in traditional and arraw function***
+### this in traditional and arrow function
 * When using arrow functions this is bound to the enclosing scope at creation time  and cannot be changed.
 * The bind, call and apply methods have no effect on it.
 ```
@@ -992,3 +992,53 @@ arrowFunc  this === window : true
 ```
 * In traditionalFunc this contains value of the object when owns the function irrespective of where the function is defined.
 * In arrowFunc this contains value of the global object because the arrow function which is attached to O was created in the scope of window and run in the scope of O. So this in the arrow function is bound to the window where it was created.	
+
+## Immediately Invoked Function Expression (IIFE)
+* IIFE is a javascript function which runs as soon as it is defined.
+```
+ (function(){
+ 	console.log("IIFE");
+ })();
+
+Ouput: IIFE
+```
+* We can also provide name to IIFE and call it explictly as below.
+
+```
+(getNumber = function(num = 3){
+	console.log("The number is "+num);
+})();
+
+getNumber(5);
+
+Output: The number is 3
+The number is 5
+```
+* The most important function of IIFE is to avoid clearing of variables in the global scope and to create closures.
+* Many javascript libraries use this technique so that variable names don't conflict between library and the program using those library.
+* Below is a simple example.
+
+```
+var a = 25;
+(function(){
+ var a = 2;
+ console.log(a);
+})();
+console.log(a);
+
+Output: 2
+25
+```
+* In ES6 you can achieve IIFE using block scope as shown below.
+```
+var b = 25;
+(function(){
+ var b = 2;
+ console.log(b);
+})();
+console.log(b);
+
+Output: 2
+25
+```
+
