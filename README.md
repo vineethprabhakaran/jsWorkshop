@@ -3,6 +3,9 @@
 ## Strings in Javascript
 ### 20 String functions:
 
+[Classes](#Classes.md)
+
+
 Lets consider two strings 
 ```
 var stringOne = "Javascript";
