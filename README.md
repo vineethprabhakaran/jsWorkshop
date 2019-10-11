@@ -1,5 +1,7 @@
 # Introduction to javascript
 
+<p align="center"><img src="https://i0.wp.com/www.vidagnu.com/wp-content/uploads/2014/12/javascript.png?w=800&ssl=1?raw=true"></p>
+
 The below topics covers all the major concepts in the world of javascript.
 ## Basics Topics
 * [Classes](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/Classes.md)
