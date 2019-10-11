@@ -3,7 +3,7 @@
 ## Strings in Javascript
 ### 20 String functions:
 
-[Classes](#Classes.md)
+[Classes](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Classes.md)
 
 
 Lets consider two strings 
