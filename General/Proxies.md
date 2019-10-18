@@ -21,7 +21,7 @@ console.log('c' in p , p.c);
 Output: 1 undefined
 false 37
 ```
-* Noraml objct without proxy
+* Noraml object without proxy
 
 ```
 var p1 = {};
