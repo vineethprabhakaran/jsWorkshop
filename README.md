@@ -24,6 +24,7 @@ The below topics covers all the major concepts in the world of javascript.
 * [Difference between SetTimeout and SetInterval](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/SetTimeoutandInterval.md)
 * [Symbols](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Symbols.md)
 * [Template literal](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Templates.md)
+* [Proxies](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Proxies.md)
 
 ## Datastructures in Javascript
 * [Arrays](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Datastructures/Arrays.md)
