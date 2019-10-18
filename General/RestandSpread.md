@@ -36,6 +36,7 @@ var array5 = [...array4];
 console.log(array5);
 
 Output: ["a", "b", "c"]
+```
 * Concat arrays
 ```
 var array6 = [1,2,3];
