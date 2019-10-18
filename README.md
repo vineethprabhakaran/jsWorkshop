@@ -25,6 +25,7 @@ The below topics covers all the major concepts in the world of javascript.
 * [Symbols](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Symbols.md)
 * [Template literal](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Templates.md)
 * [Proxies](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Proxies.md)
+* [Rest and Spread Operators](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/RestandSpread.md)
 
 ## Datastructures in Javascript
 * [Arrays](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Datastructures/Arrays.md)
