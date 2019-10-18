@@ -23,7 +23,7 @@ The below topics covers all the major concepts in the world of javascript.
 * [Random Numbers](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/RandomNumbers.md)
 * [Difference between SetTimeout and SetInterval](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/SetTimeoutandInterval.md)
 * [Symbols](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Symbols.md)
-* [Templates](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Templates.md)
+* [Template literal](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Templates.md)
 
 ## Datastructures in Javascript
 * [Arrays](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Datastructures/Arrays.md)
