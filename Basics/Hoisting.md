@@ -1,6 +1,6 @@
 ## Hoisting 
 
-* Vaiable declaration and function declaration are processed before any code is executed. 
+* Variable declaration and function declaration are processed before any code is executed. 
 * So declaring code or function anywhere in the
 code is equivalent to declaring at the top.
 * So variables and functions can appear to be used before even they were declared this behaviour is called hoisting.
