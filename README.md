@@ -13,6 +13,8 @@ The below topics covers all the major concepts in the world of javascript.
 * [Difference between Var and let and in keywords](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/VarandLetandin.md)
 * [use strict](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/strict.md)
 * [this keyword](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/this.md)
+* [Hoisting](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/Hoisting.md)
+* [Arrow Functions](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/Basics/Arrow%20Functions.md)
 
 ## General Topics
 * [Closures](https://github.com/vineethprabhakaran/jsWorkshop/blob/master/General/Closures.md)
